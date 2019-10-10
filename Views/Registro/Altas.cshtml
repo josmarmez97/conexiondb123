@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<div>
+    <h3>REGISTRO DE USUARIOS</h3>
+    <form action="/Aniadir" method="post">
+        <label> userid: <input type="text" name="userid" value=""/></label><br>
+        <label> nombre: <input type="text" name="nombre" value=""/></label><br>
+        <label> password: <input type="password" name="pass" value=""/></label><br>
+        <input type="submit" value="Registrar">
+    </form>
+    <br>
+    <a asp-controller="Registro" asp-action="Index">regresar</a>
+</div>
